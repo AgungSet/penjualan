@@ -9,16 +9,6 @@ export default defineConfig({
         }),
     ],
     build: {
-        manifest: true, // Ini akan menghasilkan manifest.json
-        outDir: 'public/build', // Hasil build akan disimpan di folder ini
-        rollupOptions: {
-            input: { // Jika Anda ingin menentukan beberapa file input, lakukan di sini
-                app: 'resources/js/app.js',
-                css: 'resources/css/app.css',
-            },
-            output: {
-                // Anda bisa menambahkan opsi output jika perlu
-            }
-        }
+        outDir: 'public/build',
     },
 });
